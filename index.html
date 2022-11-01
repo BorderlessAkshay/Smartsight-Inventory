@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <title>Smartsight Inventory</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
+    <script src="./assets/js/require.min.js"></script>
+    <script>
+        requirejs.config({
+            baseUrl: '.'
+        });
+
+    </script>
+    <!-- Dashboard Core -->
+    <link href="./assets/css/dashboard.css" rel="stylesheet" />
+    <script src="./assets/js/dashboard.js"></script>
+</head>
+
+<body class="">
+    <div class="page">
+        <div class="page-main">
+            <div class="header_nav py-4">
+                <div class="container">
+                    <div class="d-flex">
+                        <a class="header-brand" href="./index.html">
+                            Smartsight Inventory
+                        </a>
+                        <div class="d-flex order-lg-2 ml-auto">
+                            <div class="nav-item d-none d-md-flex">
+                                <a class="nav-link icon" data-toggle="dropdown">
+                                    <i class="fe fe-help-circle"></i>
+                                </a>
+                            </div>
+                            <div class="dropdown d-none d-md-flex">
+                                <a class="nav-link icon" data-toggle="dropdown">
+                                    <i class="fe fe-bell"></i>
+                                    <span class="nav-unread"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                    <a href="#" class="dropdown-item d-flex">
+                                        <span class="avatar mr-3 align-self-center" style="background-image: url(demo/faces/male/41.jpg)"></span>
+                                        <div>
+                                            <strong>Lorem</strong> Ipsum.
+                                            <div class="small text-muted">10 minutes ago</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-item d-flex">
+                                        <span class="avatar mr-3 align-self-center" style="background-image: url(demo/faces/female/1.jpg)"></span>
+                                        <div>
+                                            <strong>Lorem</strong> Ipsum.
+                                            <div class="small text-muted">1 hour ago</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-item d-flex">
+                                        <span class="avatar mr-3 align-self-center" style="background-image: url(demo/faces/female/2.jpg)"></span>
+                                        <div>
+                                            <strong>Lorem</strong> Ipsum.
+                                            <div class="small text-muted">2 hours ago</div>
+                                        </div>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="#" class="dropdown-item text-center text-muted-dark">Mark all as read</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <a href="#" class="nav-link pr-0 leading-none" data-toggle="dropdown">
+                                    <span class="avatar" style="background-image: url(./demo/faces/male/2.jpg)"></span>
+                                    <span class="ml-2 d-none d-lg-block">
+                                        <span class="text-default">Admin</span>
+                                        <small class="text-muted d-block mt-1">ABC Company Pvt Ltd</small>
+                                    </span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+
+                                    <a class="dropdown-item" href="#">
+                                        <i class="dropdown-icon fe fe-settings"></i>Account Settings
+                                    </a>
+
+                                    <a class="dropdown-item" href="#">
+                                        <i class="dropdown-icon fe fe-log-out"></i> Sign out
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="header-toggler d-lg-none ml-3 ml-lg-0" data-toggle="collapse" data-target="#headerMenuCollapse">
+                            <span class="header-toggler-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header collapse d-lg-flex p-0" id="headerMenuCollapse">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg order-lg-first">
+                            <ul class="nav nav-tabs border-0 flex-column flex-lg-row">
+                                <li class="nav-item">
+                                    <a href="./index.html" class="nav-link active">Dashboard</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Vendors</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Execution</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Approvals</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Stock</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Reports</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-3 my-md-5">
+                <div class="container">
+                    <div class="page-header">
+                        <h1 class="page-title">
+                            Vendor Master
+                        </h1>
+
+                    </div>
+                    <div class="row my-5">
+                        <div class="col-md-6 col-lg-6" style="display: flex;">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Action</button>
+                            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <form class="input-icon my-3 my-lg-0">
+                                <input type="search" class="form-control header-search" placeholder="Search…" tabindex="1">
+                                <div class="input-icon-addon">
+                                    <i class="fe fe-search"></i>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-6 col-lg-6" style="text-align: end;">
+                            <a href="#" class="btn btn-primary d-none d-sm-inline-block" style="background-color: #3F5A7E;">Create new
+                            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <div class="item-action dropdown" style="background-color: rgba(63, 90, 126, 0.17); padding: 8px; border-radius: 5px;">
+                                <a href="javascript:void(0)" data-toggle="dropdown" class="icon"><i class="fe fe-more-vertical"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="javascript:void(0)" class="dropdown-item">View </a>
+                                    <a href="javascript:void(0)" class="dropdown-item">Edit</a>
+                                    <a href="javascript:void(0)" class="dropdown-item">Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-cards row-deck">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="table-responsive">
+                                    <table class="table card-table table-vcenter text-nowrap">
+                                        <thead>
+                                            <tr style="background-color: rgba(63, 90, 126, 0.17);">
+                                                <th><input type="checkbox" aria-label="Select invoice"></th>
+                                                <th>Code</th>
+                                                <th>Vnedor Name</th>
+                                                <th>Country</th>
+                                                <th>Contact Name</th>
+                                                <th>Contact Email</th>
+                                                <th>Contact Phone</th>
+                                                <th>Status</th>
+                                                <th>Vendor ID</th>
+                                                <th class="text-center"><i class="icon-settings"></i></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="checkbox" aria-label="Select invoice"></td>
+                                                <td><span>12345</span></td>
+                                                <td>XYZ Company Pvt Ltd</td>
+                                                <td>
+                                                    India
+                                                </td>
+                                                <td>
+                                                    John Smith
+                                                </td>
+                                                <td>
+                                                    john.smith@gmail.com
+                                                </td>
+                                                <td>
+                                                    +91 9876543210
+                                                </td>
+                                                <td><span style="color: #2479EE;">Submitted</span></td>
+
+                                                <td>125555</td>
+                                                <td class="text-center">
+                                                    <div class="item-action dropdown">
+                                                        <a href="javascript:void(0)" data-toggle="dropdown" class="icon"><i class="fe fe-more-vertical"></i></a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a href="javascript:void(0)" class="dropdown-item">View </a>
+                                                            <a href="javascript:void(0)" class="dropdown-item">Edit</a>
+                                                            <a href="javascript:void(0)" class="dropdown-item">Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" aria-label="Select invoice"></td>
+                                                <td><span>62345</span></td>
+                                                <td>ANZ Company Pvt Ltd</td>
+                                                <td>
+                                                    India
+                                                </td>
+                                                <td>
+                                                    John Christopher
+                                                </td>
+                                                <td>
+                                                    john.chris@gmail.com
+                                                </td>
+                                                <td>
+                                                    +91 9876543210
+                                                </td>
+                                                <td><span style="color: #8969CC;">Manager</span></td>
+
+                                                <td>23455</td>
+                                                <td class="text-center">
+                                                    <div class="item-action dropdown">
+                                                        <a href="javascript:void(0)" data-toggle="dropdown" class="icon"><i class="fe fe-more-vertical"></i></a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a href="javascript:void(0)" class="dropdown-item">View </a>
+                                                            <a href="javascript:void(0)" class="dropdown-item">Edit</a>
+                                                            <a href="javascript:void(0)" class="dropdown-item">Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" aria-label="Select invoice"></td>
+                                                <td><span>12345</span></td>
+                                                <td>RED Company Pvt Ltd</td>
+                                                <td>
+                                                    India
+                                                </td>
+                                                <td>
+                                                    Dave Jim
+                                                </td>
+                                                <td>
+                                                    dave.jim@gmail.com
+                                                </td>
+                                                <td>
+                                                    +91 9876543210
+                                                </td>
+                                                <td><span style="color: #119F1F;">Approved</span></td>
+
+                                                <td>T54565</td>
+                                                <td class="text-center">
+                                                    <div class="item-action dropdown">
+                                                        <a href="javascript:void(0)" data-toggle="dropdown" class="icon"><i class="fe fe-more-vertical"></i></a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a href="javascript:void(0)" class="dropdown-item">View </a>
+                                                            <a href="javascript:void(0)" class="dropdown-item">Edit</a>
+                                                            <a href="javascript:void(0)" class="dropdown-item">Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" aria-label="Select invoice"></td>
+                                                <td><span>12345</span></td>
+                                                <td>Blue Company Pvt Ltd</td>
+                                                <td>
+                                                    India
+                                                </td>
+                                                <td>
+                                                    Nick Charlie
+                                                </td>
+                                                <td>
+                                                    nick.ch@gmail.com
+                                                </td>
+                                                <td>
+                                                    +91 9876543210
+                                                </td>
+                                                <td><span style="color: #EF7E16;">Finance</span></td>
+
+                                                <td>A5757</td>
+                                                <td class="text-center">
+                                                    <div class="item-action dropdown">
+                                                        <a href="javascript:void(0)" data-toggle="dropdown" class="icon"><i class="fe fe-more-vertical"></i></a>
+                                                        <div class="dropdown-menu dropdown-menu-right" style="background-color: #F5F5F5;">
+                                                            <a href="javascript:void(0)" class="dropdown-item">View </a>
+                                                            <a href="javascript:void(0)" class="dropdown-item">Edit</a>
+                                                            <a href="javascript:void(0)" class="dropdown-item">Delete</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
